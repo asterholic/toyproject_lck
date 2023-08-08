@@ -1,1 +1,20 @@
 @charset "utf-8";
+
+/* header */
+.header{position:fixed;top:0;left:0;width:100%;background-color:#4e41db}
+.header a{display:block;height:100%}
+.header_wrap{position:relative;width:1200px;margin:0 auto;padding-left:88px;box-sizing:border-box}
+.logo{position:absolute;left:0;top:0;width:88px;height:136px;background:url('../img/logo.jpg') no-repeat 0 0/100%}
+.logo_link{display:block}
+.lang{position:absolute;right:-10px;top:7px}
+.lang_btn{position:relative;width:130px;padding:10px 22px 10px 38px;text-align:left;cursor:pointer}
+.lang_btn:before{position:absolute;left:10px;top:calc();content:''}
+.lang_dropdown{display:none} /* 임시 */
+.utility{display:flex;align-items:center;padding-left:38px;box-sizing:border-box}
+.utility .utility_link{padding:10px;color:#fff;line-height:28px;opacity:.4;transition:all 0.3s}
+.utility .utility_link:hover{opacity:1}
+.utility .utility_link + .utility_link{margin-left:36px}
+.utility .utility_link.esports:before{display:block;width:18px;height:18px;background:url('../img/icon_esports.png') no-repeat 0 0/100%;content:''}
+.gnb{padding-left:38px;border-top:1px solid #665cdd;box-sizing:border-box}
+.gnb_list{display:flex}
+.depth2_list{display:none} /* 임시 */

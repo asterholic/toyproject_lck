@@ -3,7 +3,7 @@
 /* common */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,article,aside,dialog,footer,header,section,footer,nav,figure,main{margin:0;padding:0}
 html,body{-webkit-text-size-adjust:none;-ms-text-size-adjust:none} /* for mobile */
-body,input,select,textarea,button{font-family:'공통 폰트',sans-serif}
+body,input,select,textarea,button{font-family:-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif}
 ul,ol{list-style:none}
 table{border-collapse:collapse;border-spacing:0}
 input,button,select{-webkit-appearance:none;appearance:none;border:0;border-radius:0;background-color:transparent}

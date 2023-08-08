@@ -19,8 +19,12 @@
 .utility .utility_link.esports:before{display:block;width:18px;height:18px;background:url('../img/icon_esports.png') no-repeat 0 0/100%;content:''}
 .gnb{padding-left:38px;border-top:1px solid #665cdd;box-sizing:border-box}
 .depth1_list{display:flex}
+.depth1_item{height:67px}
 .depth1_item + .depth1_item{margin-left:32px}
-.depth1_link{position:relative;padding:20px 10px;color:#fff;line-height:27px;transition:all 0.3s;opacity:.4}
-.depth1_link:before{position:absolute;bottom:0;left:0;width:100%;height:5px;background-color:#fff;opacity:0;content:''}
-.depth1_link:hover:before{opacity:1}
+.gnb .depth1_link{position:relative;padding:20px 10px;color:#fff;line-height:27px;transition:all 0.3s;opacity:.4;box-sizing:border-box}
+.gnb .depth1_link:before{position:absolute;bottom:0;left:0;width:100%;height:5px;background-color:#fff;transition:all 0.3s;opacity:0;content:''}
+.gnb .depth1_link:hover{opacity:1}
+.gnb .depth1_link:hover:before{opacity:1}
+.gnb .depth1_link.shortcut:after{display:inline-block;vertical-align:middle;width:16px;height:16px;margin-left:4px;background:url('../img/icon_new.png') no-repeat 0 0/100%;content:''}
+.gnb .depth1_link .depth1_text{vertical-align:middle}
 .depth2_list{display:none} /* 임시 */

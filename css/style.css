@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* header */
-.header{position:fixed;z-index:100;top:0;left:0;width:100%;background-color:#4e41db}
+.header{position:relative;z-index:100;background-color:#4e41db}
 .header a{display:block;height:100%}
 .header_wrap{position:relative;width:1200px;margin:0 auto;padding-left:88px;box-sizing:border-box}
 .logo{position:absolute;left:0;top:0;width:88px;height:136px;background:url('../img/logo.jpg') no-repeat 0 0/100%}
@@ -44,3 +44,8 @@
 .gnb .depth2_item:hover .depth2_link{opacity:1}
 .gnb .depth2_item:hover .depth3_list{display:block}
 .gnb .depth3_item:hover .depth3_link{opacity:1}
+
+/* footer */
+.footer{background-color:#000}
+.footer .sns_area{padding:32px 0;border-bottom:1px solid #333}
+.footer .info_area{width:1200px;margin:0 auto;padding:32px 0}

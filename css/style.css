@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .wrap{min-width:1200px}
-.content{padding-top:116px}
+.content{padding-top:116px;background-color:#ddd}
 
 /* header */
 .header{position:fixed;z-index:100;top:0;left:0;width:100%;background-color:#4e41db}
@@ -68,10 +68,32 @@
 .info .company_info + .company_info:before{content:'| '}
 .info .copyright{flex:0 1 365px;font-size:14px;color:#333}
 
-/* btn */
-.btn_arrow_type{display:inline-block;font-size:14px}
+/* 공통 */
+.title_main_type{position:relative}
+.title_main_type .title_txt{font-size:38px;color:#000}
+
+.btn_arrow_type{display:inline-block;font-size:14px;cursor:pointer}
 .btn_arrow_type:after{display:inline-block;vertical-align:top;width:7px;height:14px;margin:3px 0 0 5px;background:url('../img/icon_arrow.png') no-repeat 0 0/100%;content:''}
 .btn_arrow_type .btn_txt{vertical-align:top;color:#999}
+
+.btn_info_type{display:inline-block;font-size:12px;cursor:pointer}
+.btn_info_type:before{display:inline-block;vertical-align:top;width:16px;height:16px;margin:0 4px 0 0;background:url('../img/icon_info.png') no-repeat 0 0/100%;content:''}
+.btn_info_type .btn_txt{vertical-align:top;color:#000;opacity:.4}
+
+.table_line_type tr{height:79px}
+.table_line_type th{font-size:12px;color:#000;border-top:2px solid #000;border-bottom:1px solid #000}
+.table_line_type td{font-size:12px;color:#000;text-align:center;border-bottom:1px solid #ccc}
+.table_line_type .txt_bold{font-weight:700}
+.table_line_type .team_img{display:inline-block;vertical-align:middle;overflow:hidden;position:relative;width:72px;height:36px}
+.table_line_type .team_img img{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;max-width:100%;max-height:100%}
+.table_line_type .team_txt{display:inline-block;vertical-align:middle;width:60px}
+.table_line_type .team_img + .team_txt{margin-left:12px}
+
+.tab_color_type{display:flex;background:#fff;border-radius:8px}
+.tab_color_type .tab_item{flex:1 0 0}
+.tab_color_type .tab_btn{position:relative;width:100%;height:80px;font-size:12px;color:#000;cursor:pointer}
+.tab_color_type .tab_txt{position:relative}
+.tab_color_type .tab_item.is_active .tab_btn:before{position:absolute;top:8px;right:8px;bottom:8px;left:8px;background-color:#4e41db;border-radius:8px;content:''}
 
 /* main content */
 .bg_section{padding:80px 0 48px;background:linear-gradient(90deg,#1a176f 0%,#621221 100%)}
@@ -120,3 +142,8 @@
 .live_list .live_item.soon .status{color:#fff;background-color:#4e41db}
 .live_list .live_item:hover{transform:translateY(-10px)}
 .live_total{margin-top:10px;text-align:right}
+
+.section_summary{width:1200px;margin:0 auto;padding:160px 0}
+.section_summary .title_main_type .btn_info_type{position:absolute;right:0;bottom:5px}
+.section_summary .tab_color_type{margin-top:40px}
+.section_summary .table_wrap{margin-top:40px}

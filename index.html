@@ -113,33 +113,179 @@
   </header>
   <!-- // header -->
 
-  <div class="content">
-    <div class="live_area">
-      <p class="title">LCK 2023 SPRING</p>
-      <span class="subtitle">Regular season</span>
-      <div class="game">
-        <div class="team">
-          <div class="team_img">
-            <img src="./img/logo_team1.jpg" alt="">
+  <main class="content">
+    <div class="bg_section">
+      <section class="live_area">
+        <p class="title">LCK 2023 SPRING</p>
+        <span class="subtitle">Regular season</span>
+        <div class="game">
+          <div class="team">
+            <div class="team_img">
+              <img src="./img/logo_team1.jpg" alt="">
+            </div>
+            <div class="team_name">GEN</div>
           </div>
-          <div class="team_name">GEN</div>
-        </div>
-        <div class="team">
-          <div class="team_img">
-            <img src="./img/logo_team2.jpg" alt="">
+          <div class="team">
+            <div class="team_img">
+              <img src="./img/logo_team2.jpg" alt="">
+            </div>
+            <div class="team_name">T1</div>
           </div>
-          <div class="team_name">T1</div>
         </div>
-      </div>
-      <div class="channel">
-        <a href="#" class="channel_link live1">LIVE ON</a>
-        <a href="#" class="channel_link live2">LIVE ON</a>
-        <a href="#" class="channel_link live3">LIVE ON</a>
-        <a href="#" class="channel_link live4">LIVE ON</a>
-        <a href="#" class="channel_link live5">LIVE ON</a>
-      </div>
+        <div class="channel">
+          <a href="#" class="channel_link live1">LIVE ON</a>
+          <a href="#" class="channel_link live2">LIVE ON</a>
+          <a href="#" class="channel_link live3">LIVE ON</a>
+          <a href="#" class="channel_link live4">LIVE ON</a>
+          <a href="#" class="channel_link live5">LIVE ON</a>
+        </div>
+      </section>
+      <section class="live_slide_wrap">
+        <div class="live_slide_box">
+          <div class="live_day">
+            <p class="live_date">03.01(수)</p>
+            <ul class="live_list">
+              <!-- [D] 상태에 따른 클래스 추가
+                  .onair : 생중계
+                  .soon : 중계 준비중
+                -->
+              <li class="live_item onair" onclick="location.href='javascript:void(0);'">
+                <!-- [D] .status 텍스트
+                  생중계 : LIVE
+                  중계 준비중 : COMING SOON
+                  중계 전 : UPCOMING
+                -->
+                <strong class="status">LIVE</strong>
+                <p class="live_title">LCK 2023 SPRING</p>
+                <div class="live_desc">
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team3_small.png" alt="">
+                    </div>
+                    <span class="team_txt">KDF</span>
+                  </div>
+                  <div class="vs">
+                    <span class="vs_txt">VS</span>
+                    <em class="game_time">17:00</em>
+                  </div>
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team4_small.png" alt="">
+                    </div>
+                    <span class="team_txt">DK</span>
+                  </div>
+                </div>
+              </li>
+              <li class="live_item soon">
+                <strong class="status">COMING SOON</strong>
+                <p class="live_title">LCK 2023 SPRING</p>
+                <div class="live_desc">
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team3_small.png" alt="">
+                    </div>
+                    <span class="team_txt">KDF</span>
+                  </div>
+                  <div class="vs">
+                    <span class="vs_txt">VS</span>
+                    <em class="game_time">17:00</em>
+                  </div>
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team4_small.png" alt="">
+                    </div>
+                    <span class="team_txt">DK</span>
+                  </div>
+                </div>
+              </li>
+              <li class="live_item">
+                <strong class="status">UPCOMING</strong>
+                <p class="live_title">LCK 2023 SPRING</p>
+                <div class="live_desc">
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team3_small.png" alt="">
+                    </div>
+                    <span class="team_txt">KDF</span>
+                  </div>
+                  <div class="vs">
+                    <span class="vs_txt">VS</span>
+                    <em class="game_time">17:00</em>
+                  </div>
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team4_small.png" alt="">
+                    </div>
+                    <span class="team_txt">DK</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="live_day">
+            <p class="live_date">03.02(목)</p>
+            <ul class="live_list">
+              <li class="live_item">
+                <!-- [D] .status 텍스트
+                  생중계 : LIVE
+                  중계 준비중 : COMING SOON
+                  중계 전 : UPCOMING
+                -->
+                <strong class="status">LIVE</strong>
+                <p class="live_title">LCK 2023 SPRING</p>
+                <div class="live_desc">
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team3_small.png" alt="">
+                    </div>
+                    <span class="team_txt">KDF</span>
+                  </div>
+                  <div class="vs">
+                    <span class="vs_txt">VS</span>
+                    <em class="game_time">17:00</em>
+                  </div>
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team4_small.png" alt="">
+                    </div>
+                    <span class="team_txt">DK</span>
+                  </div>
+                </div>
+              </li>
+              <li class="live_item">
+                <strong class="status">UPCOMING</strong>
+                <p class="live_title">LCK 2023 SPRING</p>
+                <div class="live_desc">
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team3_small.png" alt="">
+                    </div>
+                    <span class="team_txt">KDF</span>
+                  </div>
+                  <div class="vs">
+                    <span class="vs_txt">VS</span>
+                    <em class="game_time">17:00</em>
+                  </div>
+                  <div class="team">
+                    <div class="team_img">
+                      <img src="img/logo_team4_small.png" alt="">
+                    </div>
+                    <span class="team_txt">DK</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="live_total">
+          <a href="#" class="btn_arrow_type"><span class="btn_txt">LCK 전체 일정</span></a>
+        </div>
+      </section>
     </div>
-  </div>
+    <section class="section_summary">
+
+    </section>
+  </main>
 
   <!-- footer -->
   <footer class="footer">

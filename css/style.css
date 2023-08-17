@@ -68,7 +68,13 @@
 .info .company_info + .company_info:before{content:'| '}
 .info .copyright{flex:0 1 365px;font-size:14px;color:#333}
 
+/* btn */
+.btn_arrow_type{display:inline-block;font-size:14px}
+.btn_arrow_type:after{display:inline-block;vertical-align:top;width:7px;height:14px;margin:3px 0 0 5px;background:url('../img/icon_arrow.png') no-repeat 0 0/100%;content:''}
+.btn_arrow_type .btn_txt{vertical-align:top;color:#999}
+
 /* main content */
+.bg_section{padding:80px 0 48px;background:linear-gradient(90deg,#1a176f 0%,#621221 100%)}
 .live_area{width:1200px;margin:0 auto;padding:40px 98px;background:linear-gradient(90deg,#4e41da 0%,#e12829 100%);box-sizing:border-box}
 .live_area .title{font-size:28px;color:#fff;text-align:center}
 .live_area .subtitle{display:block;margin-top:10px;color:rgba(255,255,255,.6);text-align:center}
@@ -90,3 +96,27 @@
 .live_area .channel_link.live3:after{background-image:url('../img/icon_live3.jpg');content:'Twitch'}
 .live_area .channel_link.live4:after{background-image:url('../img/icon_live4.jpg');content:'Youtube'}
 .live_area .channel_link.live5:after{background-image:url('../img/icon_live5.jpg');content:'Naver TV'}
+
+.live_slide_wrap{width:1200px;margin:48px auto 0}
+.live_slide_box{display:flex;overflow:hidden}
+.live_slide_box .live_day + .live_day{margin-left:8px}
+.live_date{font-size:14px;color:#999}
+.live_list{display:flex;margin-top:19px}
+.live_list .live_item{overflow:hidden;position:relative;width:294px;padding:40px 10px 30px;background-color:#1f2227;border:1px solid #2f3135;border-radius:8px;box-sizing:border-box;transition:all .3s}
+.live_list .live_item + .live_item{margin-left:8px}
+.live_item .status{position:absolute;left:0;top:0;padding:6px 8px 5px;font-size:11px;color:#1f2227;line-height:13px;background-color:#707070;border-bottom-right-radius:4px}
+.live_item .live_title{font-size:15px;font-weight:700;color:#fff;text-align:center}
+.live_item .live_desc{display:flex;margin-top:24px;padding:0 21px;box-sizing:border-box}
+.live_item .live_desc .team{flex:0 0 72px}
+.live_item .live_desc .team_img{overflow:hidden;position:relative;padding-bottom:77.7%;background-color:rgba(255,255,255,.4);border-radius:4px}
+.live_item .live_desc .team_img img{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;max-width:100%;max-height:100%}
+.live_item .live_desc .team_txt{display:block;margin-top:6px;color:#fff;font-size:12px;font-weight:700;text-align:center}
+.live_item .live_desc .vs{flex:1 1 auto;margin-top:14px;text-align:center}
+.live_item .live_desc .vs_txt{font-size:16px;font-weight:700;color:rgba(255,255,255,.3)}
+.live_item .live_desc .game_time{display:block;margin-top:7px;font-size:12px;color:#9f95ff}
+.live_list .live_item.onair{border-color:#f00;cursor:pointer}
+.live_list .live_item.onair .status{color:#fff;background-color:#f00}
+.live_list .live_item.soon{border-color:#4e41db}
+.live_list .live_item.soon .status{color:#fff;background-color:#4e41db}
+.live_list .live_item:hover{transform:translateY(-10px)}
+.live_total{margin-top:10px;text-align:right}

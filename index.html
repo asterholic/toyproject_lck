@@ -7,7 +7,9 @@
 <title>스터디 과제 - LCK</title>
 <link rel="stylesheet" href="./css/reset.css">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.3.4/swiper-bundle.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.3.4/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -114,213 +116,213 @@
   <!-- // header -->
 
   <main class="content">
-    <div class="bg_section">
-      <section class="live_area">
-        <p class="title">LCK 2023 SPRING</p>
-        <span class="subtitle">Regular season</span>
-        <div class="game">
-          <div class="team">
-            <div class="team_img">
-              <img src="./img/logo_team1.jpg" alt="">
+    <section class="section_live">
+      <div class="inner">
+        <div class="live_area">
+          <p class="title">LCK 2023 SPRING</p>
+          <span class="subtitle">Regular season</span>
+          <div class="game">
+            <div class="team">
+              <div class="team_img">
+                <img src="./img/logo_team1.jpg" alt="">
+              </div>
+              <div class="team_name">GEN</div>
             </div>
-            <div class="team_name">GEN</div>
-          </div>
-          <div class="team">
-            <div class="team_img">
-              <img src="./img/logo_team2.jpg" alt="">
+            <div class="team">
+              <div class="team_img">
+                <img src="./img/logo_team2.jpg" alt="">
+              </div>
+              <div class="team_name">T1</div>
             </div>
-            <div class="team_name">T1</div>
+          </div>
+          <div class="channel">
+            <a href="#" class="channel_link live1">LIVE ON</a>
+            <a href="#" class="channel_link live2">LIVE ON</a>
+            <a href="#" class="channel_link live3">LIVE ON</a>
+            <a href="#" class="channel_link live4">LIVE ON</a>
+            <a href="#" class="channel_link live5">LIVE ON</a>
           </div>
         </div>
-        <div class="channel">
-          <a href="#" class="channel_link live1">LIVE ON</a>
-          <a href="#" class="channel_link live2">LIVE ON</a>
-          <a href="#" class="channel_link live3">LIVE ON</a>
-          <a href="#" class="channel_link live4">LIVE ON</a>
-          <a href="#" class="channel_link live5">LIVE ON</a>
-        </div>
-      </section>
-      <section class="live_slide_wrap">
-        <div class="live_slide_box">
-          <div class="live_day">
-            <p class="live_date">03.01(수)</p>
-            <ul class="live_list">
-              <!-- [D] 상태에 따른 클래스 추가
-                  .onair : 생중계
-                  .soon : 중계 준비중
-                -->
-              <li class="live_item onair" onclick="location.href='javascript:void(0);'">
-                <!-- [D] .status 텍스트
-                  생중계 : LIVE
-                  중계 준비중 : COMING SOON
-                  중계 전 : UPCOMING
-                -->
-                <strong class="status">LIVE</strong>
-                <p class="live_title">LCK 2023 SPRING</p>
-                <div class="live_desc">
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team3_small.png" alt="">
+        <div class="live_slide_wrap">
+          <div class="live_slide_box">
+            <div class="live_day">
+              <p class="live_date">03.01(수)</p>
+              <ul class="live_list">
+                <!-- [D] 상태에 따른 클래스 추가
+                    .onair : 생중계
+                    .soon : 중계 준비중
+                  -->
+                <li class="live_item onair" onclick="location.href='javascript:void(0);'">
+                  <!-- [D] .status 텍스트
+                    생중계 : LIVE
+                    중계 준비중 : COMING SOON
+                    중계 전 : UPCOMING
+                  -->
+                  <strong class="status">LIVE</strong>
+                  <p class="live_title">LCK 2023 SPRING</p>
+                  <div class="live_desc">
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team3_small.png" alt="">
+                      </div>
+                      <span class="team_txt">KDF</span>
                     </div>
-                    <span class="team_txt">KDF</span>
-                  </div>
-                  <div class="vs">
-                    <span class="vs_txt">VS</span>
-                    <em class="game_time">17:00</em>
-                  </div>
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team4_small.png" alt="">
+                    <div class="vs">
+                      <span class="vs_txt">VS</span>
+                      <em class="game_time">17:00</em>
                     </div>
-                    <span class="team_txt">DK</span>
-                  </div>
-                </div>
-              </li>
-              <li class="live_item soon">
-                <strong class="status">COMING SOON</strong>
-                <p class="live_title">LCK 2023 SPRING</p>
-                <div class="live_desc">
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team3_small.png" alt="">
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team4_small.png" alt="">
+                      </div>
+                      <span class="team_txt">DK</span>
                     </div>
-                    <span class="team_txt">KDF</span>
                   </div>
-                  <div class="vs">
-                    <span class="vs_txt">VS</span>
-                    <em class="game_time">17:00</em>
-                  </div>
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team4_small.png" alt="">
+                </li>
+                <li class="live_item soon">
+                  <strong class="status">COMING SOON</strong>
+                  <p class="live_title">LCK 2023 SPRING</p>
+                  <div class="live_desc">
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team3_small.png" alt="">
+                      </div>
+                      <span class="team_txt">KDF</span>
                     </div>
-                    <span class="team_txt">DK</span>
-                  </div>
-                </div>
-              </li>
-              <li class="live_item">
-                <strong class="status">UPCOMING</strong>
-                <p class="live_title">LCK 2023 SPRING</p>
-                <div class="live_desc">
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team3_small.png" alt="">
+                    <div class="vs">
+                      <span class="vs_txt">VS</span>
+                      <em class="game_time">17:00</em>
                     </div>
-                    <span class="team_txt">KDF</span>
-                  </div>
-                  <div class="vs">
-                    <span class="vs_txt">VS</span>
-                    <em class="game_time">17:00</em>
-                  </div>
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team4_small.png" alt="">
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team4_small.png" alt="">
+                      </div>
+                      <span class="team_txt">DK</span>
                     </div>
-                    <span class="team_txt">DK</span>
                   </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li class="live_item">
+                  <strong class="status">UPCOMING</strong>
+                  <p class="live_title">LCK 2023 SPRING</p>
+                  <div class="live_desc">
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team3_small.png" alt="">
+                      </div>
+                      <span class="team_txt">KDF</span>
+                    </div>
+                    <div class="vs">
+                      <span class="vs_txt">VS</span>
+                      <em class="game_time">17:00</em>
+                    </div>
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team4_small.png" alt="">
+                      </div>
+                      <span class="team_txt">DK</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="live_day">
+              <p class="live_date">03.02(목)</p>
+              <ul class="live_list">
+                <li class="live_item">
+                  <!-- [D] .status 텍스트
+                    생중계 : LIVE
+                    중계 준비중 : COMING SOON
+                    중계 전 : UPCOMING
+                  -->
+                  <strong class="status">LIVE</strong>
+                  <p class="live_title">LCK 2023 SPRING</p>
+                  <div class="live_desc">
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team3_small.png" alt="">
+                      </div>
+                      <span class="team_txt">KDF</span>
+                    </div>
+                    <div class="vs">
+                      <span class="vs_txt">VS</span>
+                      <em class="game_time">17:00</em>
+                    </div>
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team4_small.png" alt="">
+                      </div>
+                      <span class="team_txt">DK</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="live_item">
+                  <strong class="status">UPCOMING</strong>
+                  <p class="live_title">LCK 2023 SPRING</p>
+                  <div class="live_desc">
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team3_small.png" alt="">
+                      </div>
+                      <span class="team_txt">KDF</span>
+                    </div>
+                    <div class="vs">
+                      <span class="vs_txt">VS</span>
+                      <em class="game_time">17:00</em>
+                    </div>
+                    <div class="team">
+                      <div class="team_img">
+                        <img src="img/logo_team4_small.png" alt="">
+                      </div>
+                      <span class="team_txt">DK</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="live_day">
-            <p class="live_date">03.02(목)</p>
-            <ul class="live_list">
-              <li class="live_item">
-                <!-- [D] .status 텍스트
-                  생중계 : LIVE
-                  중계 준비중 : COMING SOON
-                  중계 전 : UPCOMING
-                -->
-                <strong class="status">LIVE</strong>
-                <p class="live_title">LCK 2023 SPRING</p>
-                <div class="live_desc">
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team3_small.png" alt="">
-                    </div>
-                    <span class="team_txt">KDF</span>
-                  </div>
-                  <div class="vs">
-                    <span class="vs_txt">VS</span>
-                    <em class="game_time">17:00</em>
-                  </div>
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team4_small.png" alt="">
-                    </div>
-                    <span class="team_txt">DK</span>
-                  </div>
-                </div>
-              </li>
-              <li class="live_item">
-                <strong class="status">UPCOMING</strong>
-                <p class="live_title">LCK 2023 SPRING</p>
-                <div class="live_desc">
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team3_small.png" alt="">
-                    </div>
-                    <span class="team_txt">KDF</span>
-                  </div>
-                  <div class="vs">
-                    <span class="vs_txt">VS</span>
-                    <em class="game_time">17:00</em>
-                  </div>
-                  <div class="team">
-                    <div class="team_img">
-                      <img src="img/logo_team4_small.png" alt="">
-                    </div>
-                    <span class="team_txt">DK</span>
-                  </div>
-                </div>
-              </li>
-            </ul>
+          <div class="live_total">
+            <a href="#" class="btn_arrow_type"><span class="btn_txt">LCK 전체 일정</span></a>
           </div>
         </div>
-        <div class="live_total">
-          <a href="#" class="btn_arrow_type"><span class="btn_txt">LCK 전체 일정</span></a>
-        </div>
-      </section>
-    </div>
-    <section class="section_summary">
-      <div class="title_main_type">
-        <h3 class="title_txt">STANDINGS OF <br>2023 SPRING - REGULAR SEASON</h3>
-        <button type="button" class="btn_info_type"><span class="btn_txt">용어 알아보기</span></button>
       </div>
-      <ul class="tab_color_type">
-        <li class="tab_item is_active">
-            <button type="button" class="tab_btn"><span class="tab_txt">TEAM</span></button>
+    </section>
+    <section class="section_summary">
+      <div class="inner">
+        <h3 class="title_main_type">STANDINGS OF <br>2023 SPRING - REGULAR SEASON</h3>
+        <button type="button" class="btn_info_type"><span class="btn_txt">용어 알아보기</span></button>
+        <ul class="tab_color_type">
+          <li class="tab_item is_active">
+              <button type="button" class="tab_btn"><span class="tab_txt">TEAM</span></button>
+            </li>
+          <li class="tab_item">
+            <button type="button"  class="tab_btn"><span class="tab_txt">POG</span></button>
           </li>
-        <li class="tab_item">
-          <button type="button"  class="tab_btn"><span class="tab_txt">POG</span></button>
-        </li>
-        <li class="tab_item">
-          <button type="button"  class="tab_btn"><span class="tab_txt">SOLO KILL</span></button>
-        </li>
-        <li class="tab_item">
-          <button type="button"  class="tab_btn"><span class="tab_txt">KDA</span></button>
-        </li>
-        <li class="tab_item">
-          <button type="button" class="tab_btn"><span class="tab_txt">KILL</span></button>
-        </li>
-        <li class="tab_item">
-          <button type="button" class="tab_btn"><span class="tab_txt">DMG/G</span></button>
-        </li>
-        <li class="tab_item">
-          <button type="button" class="tab_btn"><span class="tab_txt">CS/M</span></button>
-        </li>
-        <li class="tab_item">
-          <button type="button" class="tab_btn"><span class="tab_txt">KP%</span></button>
-        </li>
-        <li class="tab_item">
-          <button type="button" class="tab_btn"><span class="tab_txt">AST</span></button>
-        </li>
-        <li class="tab_item">
-          <button type="button" class="tab_btn"><span class="tab_txt">VS</span></button>
-        </li>
-      </ul>
-      <div class="table_wrap">
-        <table class="table_line_type">
+          <li class="tab_item">
+            <button type="button"  class="tab_btn"><span class="tab_txt">SOLO KILL</span></button>
+          </li>
+          <li class="tab_item">
+            <button type="button"  class="tab_btn"><span class="tab_txt">KDA</span></button>
+          </li>
+          <li class="tab_item">
+            <button type="button" class="tab_btn"><span class="tab_txt">KILL</span></button>
+          </li>
+          <li class="tab_item">
+            <button type="button" class="tab_btn"><span class="tab_txt">DMG/G</span></button>
+          </li>
+          <li class="tab_item">
+            <button type="button" class="tab_btn"><span class="tab_txt">CS/M</span></button>
+          </li>
+          <li class="tab_item">
+            <button type="button" class="tab_btn"><span class="tab_txt">KP%</span></button>
+          </li>
+          <li class="tab_item">
+            <button type="button" class="tab_btn"><span class="tab_txt">AST</span></button>
+          </li>
+          <li class="tab_item">
+            <button type="button" class="tab_btn"><span class="tab_txt">VS</span></button>
+          </li>
+        </ul>
+        <table class="table_wrap">
           <colgroup>
             <col style="width:104px">
             <col style="width:256px">
@@ -488,6 +490,221 @@
             </tr>
           </tbody>
         </table>
+      </div>
+    </section>
+    <section class="section_news">
+      <div class="inner">
+        <h3 class="title_main_type">LCK NOW</h3>
+        <div class="slide_wrap">
+          <div class="slide_btn">
+            <button type="button" class="btn_prev"><span class="blind">이전</span></button>
+            <button type="button" class="btn_next"><span class="blind">다음</span></button>
+          </div>
+          <div class="slide_swiper group_type">
+            <ul class="swiper-wrapper">
+              <!-- [D] 게시글 우측 상단 아이콘 클래스
+                .new_window : 새창 열림
+                .video : 영상
+              -->
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board1.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide new_window">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board2.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="info_num like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="info_num comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide video">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board3.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board4.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board5.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board6.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board7.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board8.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board9.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board10.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <div class="article_info">
+                      <span class="like"><span class="blind">좋아요 수</span> 1.6만</span>
+                      <span class="comment"><span class="blind">댓글 수</span> 319</span>
+                    </div>
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </div>
+    </section>
+    <section class="section_highlight bg_dark">
+      <div class="inner">
+        <h3 class="title_main_type">HIGHLIGHT</h3>
+        <div class="slide_wrap">
+          <div class="slide_btn_box">
+            <button type="button" class="btn_prev"><span class="blind">이전</span></button>
+            <button type="button" class="btn_next"><span class="blind">다음</span></button>
+          </div>
+          <div class="slide_swiper highlight_type">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide afreeca">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board1.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide youtube">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board2.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide afreeca">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board3.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide youtube">
+                <a href="#">
+                  <div class="img_box">
+                    <img src="./img/img_board4.jpg" alt="">
+                  </div>
+                  <div class="article_box">
+                    <p class="article_txt">[2023 LCK Spring] 6주차 순위표 첫 플레이오프 진출팀이 결정된 2023 LCK Spring 6주차!</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn_border_type">전체보기</a>
+        </div>
       </div>
     </section>
   </main>

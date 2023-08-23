@@ -8,7 +8,7 @@ $(document).ready(function(){
   $('.slide_swiper').each(function(index){
     $(this).addClass('slide_swiper-' + index);
 
-    if ($(this).hasClass('group_type')) {
+    if ($(this).hasClass('group')) {
       var swiper_option = {
         slidesPerColumn: 2
       }

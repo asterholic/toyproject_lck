@@ -127,11 +127,11 @@ body{background-color:#ddd}
 .slide_swiper .play:before{position:absolute;width:100%;height:100%;background-repeat:no-repeat;background-position:0 0;background-size:100%;content:''}
 .slide_swiper .play.afreeca:before{background-image:url('../img/icon_play_channel2.png')}
 .slide_swiper .play.youtube:before{background-image:url('../img/icon_play_channel4.png')}
-.slide_swiper.group_type{overflow:hidden}
-.slide_swiper.group_type .swiper-slide{width:282px}
-.slide_swiper.group_type .img_box{padding-bottom:282px}
-.slide_swiper.group_type .article_box{min-height:157px;padding:16px 24px 24px}
-.slide_swiper.group_type .article_txt{height:80px;font-size:12px;color:#999;line-height:20px;-webkit-line-clamp:4}
+.slide_swiper.news_type{overflow:hidden}
+.slide_swiper.news_type .swiper-slide{width:282px}
+.slide_swiper.news_type .img_box{padding-bottom:282px}
+.slide_swiper.news_type .article_box{min-height:157px;padding:16px 24px 24px}
+.slide_swiper.news_type .article_txt{height:80px;font-size:12px;color:#999;line-height:20px;-webkit-line-clamp:4}
 
 /* main content */
 .section_live{padding:80px 0 48px;background:linear-gradient(90deg,#1a176f 0%,#621221 100%)}

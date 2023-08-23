@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /* common */
+*{box-sizing:border-box}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,article,aside,dialog,footer,header,section,footer,nav,figure,main{margin:0;padding:0}
 html,body{-webkit-text-size-adjust:none;-ms-text-size-adjust:none} /* for mobile */
 body,input,select,textarea,button{font-family:-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif}

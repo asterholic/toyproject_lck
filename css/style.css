@@ -110,7 +110,7 @@ body{background-color:#ddd}
 .bg_dark .slide_btn .btn_next{background-color:#fff;background-image:url('../img/btn_next.png')}
 .slide_btn .swiper-button-disabled{opacity:.5;pointer-events:none}
 .slide_swiper .swiper-slide{width:384px}
-.slide_swiper .img_box{overflow:hidden;position:relative;padding-bottom:215px;border-radius:8px 8px 0 0}
+.slide_swiper .img_box{overflow:hidden;position:relative;padding-bottom:215px;background:#888;border-radius:8px 8px 0 0}
 .slide_swiper .img_box img{position:absolute;left:50%;top:50%;width:100%;transform:translate(-50%,-50%)}
 .slide_swiper .article_box{padding:20px 24px;background-color:#fff;border-radius:0 0 8px 8px}
 .slide_swiper .article_info{display:inline-block;vertical-align:top;font-size:14px;line-height:21px;color:#000}

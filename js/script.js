@@ -28,4 +28,12 @@ $(document).ready(function(){
       slidesPerColumn: swiper_option.slidesPerColumn
     });
   });
+
+  // sponsor slide
+  var sponsor_slide = new Swiper('.sponsor_slide', {
+    slidesPerView: 'auto',
+    spaceBetween: 18,
+    loop: true,
+    simulateTouch: false
+  });
 });

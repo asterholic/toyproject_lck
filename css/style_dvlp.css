@@ -36,20 +36,13 @@ body{background-color:#ddd}
 .gnb .depth3_list{display:none;position:absolute;top:0;left:143px;width:150px;min-height:200px;padding:30px 0 30px 50px}
 .gnb .depth3_list:before{position:absolute;left:0;top:30px;width:1px;height:calc(100% - 60px);background-color:#fff;opacity:.4;content:''}
 .gnb .depth3_link{padding:3px 0 3px 5px;color:#fff;transition:all 0.3s;opacity:.4}
-.gnb .depth1_item:hover .depth1_link{opacity:1}
-.gnb .depth1_item:hover .depth1_link:before{opacity:1}
-.gnb .depth1_item:hover .depth2_list{display:block}
-.gnb .depth1_link:hover{border-color:rgba(255,255,255,1)}
 .gnb .depth1_link.is_active{border-color:rgba(255,255,255,1)}
-.gnb .depth2_item:hover .depth2_link{opacity:1}
-.gnb .depth2_item:hover .depth3_list{display:block}
-.gnb .depth3_item:hover .depth3_link{opacity:1}
 .gnb .depth1_item.is_active .depth1_link{opacity:1}
 .gnb .depth1_item.is_active .depth1_link:before{opacity:1}
 .gnb .depth1_item.is_active .depth2_list{display:block}
-.gnb .depth2_item.is_active .depth2_link{opacity:1}
-.gnb .depth2_item.is_active .depth3_list{display:block}
-.gnb .depth3_item.is_active .depth3_link{opacity:1}
+.gnb .depth2_item:hover .depth2_link{opacity:1}
+.gnb .depth2_item:hover .depth3_list{display:block}
+.gnb .depth3_item:hover .depth3_link{opacity:1}
 
 /* footer */
 .footer{overflow:hidden;background-color:#000}

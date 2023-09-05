@@ -1,4 +1,21 @@
 $(document).ready(function(){
+  //gnb
+  var timerAfterOut = null;
+
+  $('.gnb .depth1_item').on({
+    mouseleave: function(){
+      var gnbItem = $(this);
+      timerAfterOut = setTimeout(function(){
+        gnbItem.removeClass('is_active');
+      }, 1000);
+    },
+    mouseenter: function(){
+      clearTimeout(timerAfterOut);
+      $(this).addClass('is_active');
+      $(this).siblings().removeClass('is_active');
+    }
+  });
+  
   // 언어 선택
   $('.header .lang_select').on('click',function(){
     $(this).parent().toggleClass('is_active');

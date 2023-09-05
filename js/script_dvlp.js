@@ -3,6 +3,11 @@ $(document).ready(function(){
   $('.header .lang_select').on('click',function(){
     $(this).parent().toggleClass('is_active');
   });
+  $('html').on('click',function(e){
+    if (!$(e.target).hasClass('lang_select') && $('.header .lang').hasClass('is_active')) {
+      $('.header .lang').removeClass('is_active');
+    }
+  });
 
   // swiper
   $('.slide_swiper').each(function(index){

@@ -9,8 +9,8 @@ body{background-color:#ddd}
 .header{position:fixed;z-index:100;top:0;left:0;width:100%;background-color:#4e41db}
 .header a{display:block;height:100%}
 .header_wrap{position:relative;width:1200px;margin:0 auto;padding-left:88px}
-.logo{position:absolute;left:0;top:0;width:88px;height:136px;background:url('../img/logo.jpg') no-repeat 0 0/100%}
-.logo .logo_link{display:block}
+.logo{position:absolute;left:0;top:0;width:88px}
+.logo img{width:100%}
 .lang{position:absolute;right:-10px;top:4px;cursor:pointer;transition:all 0.3s;opacity:.4}
 .lang:before{position:absolute;left:10px;top:calc(50% - 8px);width:16px;height:16px;background:url('../img/icon_lang.png') no-repeat 0 0/100%;content:''}
 .lang:after{position:absolute;right:10px;top:calc(50% - 2px);border-top:4px solid #fff;border-right:3px solid transparent;border-left:3px solid transparent;content:''}
@@ -56,10 +56,9 @@ body{background-color:#ddd}
 .sns_link.sns5{background-image:url('../img/icon_sns5.jpg')}
 .info{display:flex;justify-content:space-between;align-items:center;width:1200px;margin:0 auto;padding:32px 0}
 .info .host:after{clear:both;content:''}
-.info .host_logo{float:left;width:116px;height:52px;background-repeat:no-repeat;background-position:0 0;background-size:100%}
+.info .host_logo{float:left;width:116px}
 .info .host_logo + .host_logo{margin-left:18px}
-.info .host_logo.host1{background-image:url('../img/logo_riot.jpg')}
-.info .host_logo.host2{background-image:url('../img/logo_lck.jpg')}
+.info .host_logo img{width:100%}
 .info .company{font-size:14px;color:#333}
 .info .company_info + .company_info:before{content:'| '}
 .info .copyright{flex:0 1 365px;font-size:14px;color:#333}

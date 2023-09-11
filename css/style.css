@@ -16,7 +16,7 @@ body{background-color:#ddd}
 .lang .lang_btn:before{position:absolute;left:10px;top:calc(50% - 8px);width:16px;height:16px;background:url('../img/icon_lang.png') no-repeat 0 0/100%;content:''}
 .lang .lang_btn:after{position:absolute;right:10px;top:calc(50% - 2px);border-top:4px solid #fff;border-right:3px solid transparent;border-left:3px solid transparent;content:''}
 .lang .lang_btn:hover{opacity:1}
-.lang .lang_dropdown{display:none;position:absolute;top:0;left:0;width:100%;padding:54px 10px 10px;background-color:#321aaf}
+.lang .lang_dropdown{display:none;position:absolute;z-index:5;top:0;left:0;width:100%;padding:54px 10px 10px;background-color:#321aaf}
 .lang .lang_dropdown:before{position:absolute;top:43px;left:10px;width:110px;height:1px;background:#fff;content:''}
 .lang .lang_link{color:#fff;padding:3px 3px 3px 28px;transition:all 0.3s}
 .lang .lang_link + .lang_link{margin-top:3px}

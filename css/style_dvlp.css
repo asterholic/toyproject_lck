@@ -63,7 +63,7 @@ body{background-color:#ddd}
 .sponsor_slide{padding:24px 0;background:#1e1e1e}
 .sponsor_slide .swiper-wrapper{display:flex;animation:marquee 10s linear infinite}
 .sponsor_slide:hover .swiper-wrapper{animation-play-state:paused}
-.sponsor_slide .swiper-slide{flex:0 0 180px;height:64px}
+.sponsor_slide .swiper-slide{flex:0 0 180px;height:64px;margin-left:18px}
 .sponsor_slide .swiper-slide img{position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;max-width:100%;max-height:100%}
 
 @keyframes marquee {

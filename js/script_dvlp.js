@@ -52,10 +52,22 @@ $(document).ready(function(){
   });
 
   // sponsor slide
-  var sponsor_slide = new Swiper('.sponsor_slide', {
-    slidesPerView: 'auto',
-    spaceBetween: 18,
-    loop: true,
-    simulateTouch: false
-  });
+  var sponWrap = $('.sponsor_slide .swiper-wrapper');
+    
+  var sponCont = sponWrap.html();
+  var sponNum = sponWrap.children().length;
+  var sponWidth = sponWrap.children().width();
+  var sponMargin = parseInt(sponWrap.children().css('margin-left'));
+  var aniDist = (sponWidth + sponMargin) * sponNum;
+
+  var maxScrWidth = 2560;
+  
+  function copySponsor() {
+    do {
+      var totalWidth = (sponWidth + sponMargin) * sponWrap.children().length;
+      sponWrap.append(sponCont);
+
+    } while (totalWidth < maxScrWidth + aniDist)
+  }
+  copySponsor();
 });

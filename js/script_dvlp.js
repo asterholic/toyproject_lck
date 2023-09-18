@@ -69,5 +69,7 @@ $(document).ready(function(){
 
     } while (totalWidth < maxScrWidth + aniDist)
   }
+  
   copySponsor();
+  document.body.style.setProperty('--num',sponNum);
 });

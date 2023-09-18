@@ -77,7 +77,7 @@ body{background-color:#ddd}
 
 @keyframes marquee {
   0% {transform:translateX(0)}
-  100% {transform:translateX(-990px)}
+  100% {transform:translateX(calc(-198px * var(--num)))}
 }
 
 /* 공통 */
